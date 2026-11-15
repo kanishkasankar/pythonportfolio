@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0b0b16;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 25px 8%;
+            background: #151526;
+        }
+
+        nav h2 {
+            color: #a78bfa;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .home {
+             min-height: 85vh;
+            display: flex;
+            flex-direction: row;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            padding: 60px 10%;
+        }
+
+        .home h1 {
+            font-size: 50px;
+            margin: 15px 0;
+        }
+
+        .home h1 span {
+            color: #a78bfa;
+        }
+
+        .home p {
+            color: #c4c4d4;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        section {
+            padding: 60px 10%;
+        }
+
+        section h2 {
+            color: #a78bfa;
+            margin-bottom: 25px;
+            font-size: 30px;
+        }
+
+        .card {
+            background: #19192b;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #151526;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>MyPortfolio</h2>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="home" id="home">
+       <div class="home-content">
+        <p>Hello, welcome to my portfolio!</p>
+        <h1>I'm <span>KANISHKA SANKAR</span></h1>
+        <p>B.Tech CSE - Artificial Intelligence & Machine Learning Student</p>
+        <p>Passionate about technology, programming and learning new things.</p>
+    </div>
+
+    <img src="{{ url_for('static', filename='myphoto.jpg.jpeg') }}"
+         alt="My Profile Photo"
+         width="220"
+         height="220"
+         style="border-radius: 50%; object-fit: cover;">
+    </div>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="card">
+            I am Kanishka Sankar, a B.Tech Computer Science
+            student specializing in Artificial Intelligence
+            and Machine Learning. I am passionate about
+            technology, programming and exploring new ideas.
+            I enjoy learning new skills and improving my
+            technical knowledge through practical projects.
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="card">
+            <p>Python</p>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>Problem Solving</p>
+            <p>Communication</p>
+            <p>Teamwork</p>
+            <p>Creative Thinking</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="card">
+            <h3>Personal Portfolio Website</h3>
+            <p>A personal portfolio developed using HTML, CSS and Python Flask.</p>
+</div>
+
+<div class="card">
+        <h3>Python Programming Projects</h3>
+        <p>Simple Python programs created to improve my coding and problem-solving skills.</p>
+</div>
+
+        <div class="card">
+        <h3>Web Development</h3>
+        <p>Exploring website design using HTML and CSS.</p>
+</div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="card">
+            <p>Thank you for visiting my portfolio!</p>
+            <p>I'd love to connect and learn from others.</p>
+            <p>Email: your-kanishkashankar0207@gmail.com</p>
+            <p>LinkedIn: https://www.linkedin.com/in/kanishka-sankar-82a64538a</p>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 My Portfolio | All Rights Reserved
+    </footer>
+
+</body>
+</html>
